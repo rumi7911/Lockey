@@ -55,3 +55,7 @@ DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test
 ## Status
 
 Lockey is currently focused on a compact v1 experience for personal/direct use.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
