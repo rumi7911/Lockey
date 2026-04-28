@@ -6,6 +6,7 @@ Lockey is a lightweight macOS menu bar utility that temporarily suppresses keybo
 
 - Latest DMG: [Lockey.dmg](https://github.com/rumi7911/Lockey/releases/latest/download/Lockey.dmg)
 - Releases page: [GitHub Releases](https://github.com/rumi7911/Lockey/releases)
+- Website repo: [Lockey-website](https://github.com/rumi7911/Lockey-website)
 
 ## Why Lockey
 
@@ -91,6 +92,9 @@ DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test
 - `Sources/LockeyKit/`: core state machine, permission handling, and interception services
 - `Tests/LockeyKitTests/`: unit tests for controller and keyboard interception behavior
 - `script/build_and_run.sh`: local build, bundle, and launch entrypoint
+
+The marketing website has been split into a separate repository:
+`https://github.com/rumi7911/Lockey-website`
 
 ## Status
 
