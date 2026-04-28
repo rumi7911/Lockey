@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/Lockey-website/index.html" },
+    { "source": "/privacy", "destination": "/Lockey-website/privacy.html" },
+    { "source": "/terms", "destination": "/Lockey-website/terms.html" },
+    { "source": "/(.*)", "destination": "/Lockey-website/$1" }
+  ]
+}
