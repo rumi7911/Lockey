@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions — Lockey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue-light: #6aabf7;
+      --blue-mid:   #3b82f6;
+      --bg:         #07090f;
+      --surface:    #0d1220;
+      --border:     rgba(255,255,255,0.07);
+      --text:       #f0f4ff;
+      --muted:      #8899bb;
+      --radius:     18px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      backdrop-filter: blur(20px) saturate(1.4);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      background: rgba(7,9,15,0.7);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img { width: 30px; height: 30px; border-radius: 7px; }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--text); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 140px 24px 100px;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 40px 0 12px;
+    }
+
+    .content p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .content ul {
+      margin: 8px 0 14px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .content ul li {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .highlight {
+      background: rgba(59,130,246,0.08);
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+
+    .highlight p {
+      color: var(--blue-light);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 0.825rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      h1 { font-size: 2rem; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Lockey icon" />
+      Lockey
+    </a>
+    <a class="nav-link" href="index.html">← Back to Home</a>
+  </nav>
+
+  <main>
+    <p class="page-label">Legal</p>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="meta">Last updated: April 18, 2025</p>
+
+    <div class="content">
+
+      <div class="highlight">
+        <p>Lockey is free, open-source software provided as-is under the MIT License. By using it, you agree to these terms.</p>
+      </div>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using Lockey ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree, do not use the App.</p>
+
+      <h2>2. License</h2>
+      <p>Lockey is released under the <a href="https://github.com/rumi7911/Lockey/blob/main/LICENSE" style="color:var(--blue-light);text-decoration:none;">MIT License</a>. You are free to:</p>
+      <ul>
+        <li>Use the App for personal or commercial purposes</li>
+        <li>Copy, modify, and distribute the source code</li>
+        <li>Incorporate it into your own projects</li>
+      </ul>
+      <p>The only requirement is that the original copyright notice and license be included in any distribution.</p>
+
+      <h2>3. Description of Service</h2>
+      <p>Lockey is a macOS menu bar utility that temporarily suppresses keyboard input to assist with keyboard cleaning. It operates entirely on your local device and requires the macOS Accessibility permission to function.</p>
+
+      <h2>4. Permitted Use</h2>
+      <p>You may use Lockey for any lawful purpose. You agree not to:</p>
+      <ul>
+        <li>Use the App to circumvent security controls on systems you do not own or have permission to access</li>
+        <li>Modify or distribute the App in a way that misrepresents its origin or functionality</li>
+        <li>Use the App in a manner that violates applicable laws or regulations</li>
+      </ul>
+
+      <h2>5. Accessibility Permission</h2>
+      <p>Lockey requires the macOS Accessibility permission to intercept and suppress keyboard events. By granting this permission, you acknowledge that you understand its purpose and consent to its use solely for keyboard suppression as described. Lockey does not record, log, or transmit any keyboard input.</p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>The App is provided "as is" and "as available," without warranty of any kind, express or implied. We make no warranties regarding:</p>
+      <ul>
+        <li>Merchantability or fitness for a particular purpose</li>
+        <li>Uninterrupted or error-free operation</li>
+        <li>The completeness or accuracy of keyboard event interception across all macOS configurations</li>
+      </ul>
+      <p>Some macOS security contexts may limit the App's ability to intercept all key events. This is a known limitation of user-space applications on macOS.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, the authors of Lockey shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, the App — including but not limited to accidental key presses, data loss, or system disruptions.</p>
+
+      <h2>8. System Requirements & Compatibility</h2>
+      <p>Lockey requires macOS 14 (Sonoma) or later. The authors make no guarantee that the App will be compatible with future versions of macOS or that Apple will continue to provide the APIs the App depends on.</p>
+
+      <h2>9. Open Source Contributions</h2>
+      <p>Contributions to Lockey's source code via GitHub are welcome and governed by the MIT License. By submitting a contribution, you agree that your code may be distributed under the same license.</p>
+
+      <h2>10. Changes to These Terms</h2>
+      <p>These terms may be updated from time to time. The latest version will always be available on this page with an updated date. Continued use of the App after changes constitutes acceptance of the revised terms.</p>
+
+      <h2>11. Governing Law</h2>
+      <p>These terms are governed by and construed in accordance with applicable law. Any disputes shall be resolved in the jurisdiction where the author is located.</p>
+
+      <h2>12. Contact</h2>
+      <p>Questions regarding these terms can be raised via the <a href="https://github.com/rumi7911/Lockey/issues" style="color:var(--blue-light);text-decoration:none;">GitHub Issues page</a>.</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 Lockey. MIT License.</span>
+    <div style="display:flex;gap:24px;">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="https://github.com/rumi7911/Lockey" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>

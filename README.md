@@ -2,6 +2,11 @@
 
 Lockey is a lightweight macOS menu bar utility that temporarily suppresses keyboard input so you can clean your keyboard without triggering accidental key presses.
 
+## Download
+
+- Latest DMG: [Lockey.dmg](https://github.com/rumi7911/Lockey/releases/latest/download/Lockey.dmg)
+- Releases page: [GitHub Releases](https://github.com/rumi7911/Lockey/releases)
+
 ## Why Lockey
 
 When cleaning a keyboard, accidental key presses can trigger shortcuts, type into active apps, and disrupt your session. Lockey provides a quick lock/unlock flow directly from the menu bar.
@@ -37,7 +42,42 @@ Useful modes:
 ./script/build_and_run.sh --verify
 ./script/build_and_run.sh --logs
 ./script/build_and_run.sh --debug
+./script/build_and_run.sh --bundle
+./script/build_and_run.sh --dmg
 ```
+
+### Build a DMG for distribution
+
+```bash
+./script/build_and_run.sh --dmg
+```
+
+This creates `dist/Lockey-1.0.0.dmg` by default. You can override the release version:
+
+```bash
+LOCKEY_VERSION=1.0.0 ./script/build_and_run.sh --dmg
+```
+
+The build also writes `dist/Lockey.dmg` as the stable release artifact name for GitHub Releases and website download links.
+
+If you have Apple Developer signing configured locally, you can optionally sign the app bundle and DMG:
+
+```bash
+LOCKEY_VERSION=1.0.0 \
+LOCKEY_CODESIGN_IDENTITY="Developer ID Application: Your Name (TEAMID)" \
+./script/build_and_run.sh --dmg
+```
+
+If you also have a `notarytool` keychain profile configured, the same command can notarize and staple the DMG:
+
+```bash
+LOCKEY_VERSION=1.0.0 \
+LOCKEY_CODESIGN_IDENTITY="Developer ID Application: Your Name (TEAMID)" \
+LOCKEY_NOTARY_PROFILE="AC_NOTARY_PROFILE" \
+./script/build_and_run.sh --dmg
+```
+
+Without Developer ID signing and notarization, macOS will treat the download as an unsigned app and users may need to use `Right Click > Open` on first launch.
 
 ## Testing
 

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Lockey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue-light: #6aabf7;
+      --blue-mid:   #3b82f6;
+      --bg:         #07090f;
+      --surface:    #0d1220;
+      --border:     rgba(255,255,255,0.07);
+      --text:       #f0f4ff;
+      --muted:      #8899bb;
+      --radius:     18px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      backdrop-filter: blur(20px) saturate(1.4);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      background: rgba(7,9,15,0.7);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img { width: 30px; height: 30px; border-radius: 7px; }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--text); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 140px 24px 100px;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 40px 0 12px;
+    }
+
+    .content p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .content ul {
+      margin: 8px 0 14px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .content ul li {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .highlight {
+      background: rgba(59,130,246,0.08);
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+
+    .highlight p {
+      color: var(--blue-light);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 0.825rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      h1 { font-size: 2rem; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Lockey icon" />
+      Lockey
+    </a>
+    <a class="nav-link" href="index.html">← Back to Home</a>
+  </nav>
+
+  <main>
+    <p class="page-label">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: April 18, 2025</p>
+
+    <div class="content">
+
+      <div class="highlight">
+        <p>Lockey does not collect, store, transmit, or share any personal data. Ever. This policy exists to make that explicit.</p>
+      </div>
+
+      <h2>Overview</h2>
+      <p>Lockey is a local macOS menu bar utility. It runs entirely on your device and has no network communication, no analytics, no crash reporting, and no telemetry of any kind.</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect nothing. Lockey does not collect:</p>
+      <ul>
+        <li>Personally identifiable information</li>
+        <li>Keystrokes or keyboard input data</li>
+        <li>Usage analytics or statistics</li>
+        <li>Device identifiers or hardware information</li>
+        <li>Crash reports or diagnostic data</li>
+        <li>Location data</li>
+      </ul>
+
+      <h2>Keyboard Event Interception</h2>
+      <p>When the keyboard lock is active, Lockey intercepts keyboard events at the macOS system level using the Accessibility API. These events are suppressed and discarded — they are never read, logged, stored, or transmitted anywhere. Lockey does not record what keys you press.</p>
+
+      <h2>Accessibility Permission</h2>
+      <p>Lockey requires the macOS Accessibility permission (System Settings → Privacy &amp; Security → Accessibility) to intercept keyboard events. This permission is used solely to suppress key events during the lock period. No data derived from this permission is ever stored or transmitted.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>Lockey does not integrate with any third-party services, SDKs, or analytics platforms. No data is shared with third parties because no data is collected.</p>
+
+      <h2>Local Storage</h2>
+      <p>Lockey may store minimal application preferences locally on your device (e.g., window state). This data never leaves your machine and is not accessible to us.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Lockey does not collect any data from users of any age. The app is suitable for general use.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>If this policy is updated, the revised version will be posted here with an updated date. Continued use of the app constitutes acceptance of any changes.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this privacy policy can be raised via the <a href="https://github.com/rumi7911/Lockey/issues" style="color:var(--blue-light);text-decoration:none;">GitHub Issues page</a>.</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 Lockey. MIT License.</span>
+    <div style="display:flex;gap:24px;">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="https://github.com/rumi7911/Lockey" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
